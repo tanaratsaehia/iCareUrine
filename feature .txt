@@ -1,0 +1,68 @@
+feature 
+    - set zero load cell with button [Done]
+    - reset record start time
+    1.บันทึกปริมาณปัสสาวะทุกๆ 1 ชม.
+    2.รวมปริมาณปัสสาวะเมื่อครบ 8 ชม.
+    3.ถ้าใน 1 ชม. ปริมาณปัสสาวะไม่ถึง 30 ml เครื่องจะแจ้งเตือน line
+    4.บันทึกค่าลง csv ก่อนแล้วค่อยอัปโหลดขึ้น gg sheet ****
+    5.ส่งรูปเข้า line ทุกๆ 1 ชม.
+    6.อ่านแบต
+    7.buzzer แจ้งแบตน้อย, ปัสสาวะน้อย
+
+ของ
+    1.esp32 cam
+    2.sd card module
+    3.load cell
+    4.power sub (option)
+    5.charge module
+
+
+ค่า
+sd card 35
+จอ lcd 150
+ค่าส่ง+ค่ากล่อง 55+5
+ค่าแรง 1000
+
+
+
+date,time,weight,path_pic,line_noti_status,gg_sheet_upload_status
+17-July-2024,11-36-44,330.5,'/picture5588.jpg,0,0 
+
+
+command form esp32
+ - c_config_wifi
+ - c_wifi_connected
+ - c_present_ok
+ - c_wifi_fail
+ - c_file_created
+ - c_file_already_exist
+ - c_wake_up
+ - c_weight_ok
+ - c_wifi_loss
+ - c_alert_buz
+
+
+command form nano
+ - c_delete_file
+ - c_keep_file
+ - c_present_mode
+ - c_weight_**
+ - c_batt_loss
+ - c_config_ok
+ - c_connected_ok
+ - c_fail_ok
+ - c_buz_ok
+
+
+-รวมและคุยกัน 2 บอร์ด [done]
+-รีเซ็ตวันที่ (ชื่อไฟล์) [done]
+-รวมแจ้งเตือนตามเวลา
+-โหมดนำเสนอ [done]
+-แจ้งแบตหมด [done]
+
+น้อง อีตรง 8 ชม อ่ะ  พี่ขอเปลี่ยนเป็น 06.00  14.00 22.00  ได้มั้ย พี่ลืมไปเวรพยาบาลมัน ตัดแบบนี้
+
+แก้ไข
+ -พรี
+ -on buzzer when less than 30 ml
+ -change time format on line notify

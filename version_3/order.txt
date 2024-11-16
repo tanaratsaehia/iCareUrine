@@ -1,0 +1,46 @@
+ร้าน Cytron
+1.Raspberry Pi Zero 2 W(main board) ราคา 561
+2.Pi Camera Module V2  ราคา 617
+3.pin header 2x20 ราคา 5
+4.ADC ราคา 150
+5.Cable Camera ราคา 60
+6.LCD screen 1.3" ราคา 253
+7.Step up dc to dc ราคา 29
+8.charger module ราคา 47
+vat 7% 125
+ค่าส่ง 60
+รวม 1907
+
+ร้าน SJCAM
+1.micro SD card ราคา 188
+ค่าส่ง 38
+รวม 226
+
+ร้าน Cybertice
+1.HX711 ราคา 60
+2.load cell ราคา 45
+3.ถ่านกระดุม CR2025 3v ราคา 8
+4.RTC ราคา 70
+5.battery 3.7V 5000mAh ราคา 250
+6.กล่องพลาสติก ราคา 70
+7.female pin header 20x2 ราคา 6
+8.male jst ราคา 31
+9.female jst ราคา 74
+ค่าส่ง 50
+รวม 664
+
+Already have
+1.pcb ราคา 70
+2.on/off switch  ราคา 5
+3.rotary sw toggle button  ราคา 10
+4.buzzer ราคา 10
+รวม 95
+
+สรุป
+ทำกล่อง 400
+อุปกรณ์ 2,892
+ต่อวงจร 2,000
+เขียนโค้ด 3,000
+รวมทั้งหมด 8,292 บาท
+ใช้เวลาทำ 7 วัน(ไม่นับวันรอของ)
+เวลาทดสอบ 2-3 วัน
