@@ -22,5 +22,8 @@ ROTARY_SW = 17  # Switch pin
 # Buzzer
 BUZZER_PIN = 21   # Buzzer control
 
+# Fan control pin
+FAN_PIN = 4
+
 # Remaining GPIO Pins (Available)
-# AVAILABLE_PINS = [4, 7, 9, 12, 13, 14, 15, 16, 19, 20, 23, 26]
+# AVAILABLE_PINS = [7, 9, 12, 13, 14, 15, 16, 19, 20, 23, 26]
