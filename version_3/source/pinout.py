@@ -24,5 +24,8 @@ BUZZER_PIN = 21   # Buzzer control
 
 TEST_TOKEN = "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"
 
+# Fan control pin
+FAN_PIN = 4
+
 # Remaining GPIO Pins (Available)
-# AVAILABLE_PINS = [4, 7, 9, 12, 13, 14, 15, 16, 19, 20, 23, 26]
+# AVAILABLE_PINS = [7, 9, 12, 13, 14, 15, 16, 19, 20, 23, 26]
