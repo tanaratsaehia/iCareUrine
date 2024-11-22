@@ -1,0 +1,29 @@
+#!/bin/bash
+# Navigate to the directory containing your Python script
+cd /home/admin/iCareUrine_git/version_3/source
+
+# Activate the virtual environment
+source /home/admin/iCareUrine/ENV/bin/activate
+
+# Run the main Python script
+python /home/admin/iCareUrine_git/version_3/source/main_present.py
+
+
+[Unit]
+Description=Start iCareUrine Application
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/admin/start_icareurine.sh
+Restart=always
+User=admin
+WorkingDirectory=/home/admin/iCareUrine_git/version_3/source
+
+[Install]
+WantedBy=multi-user.target
+
+
+check status: sudo systemctl status icareurine.service
+log output: cat /var/log/syslog | grep start_icareurine.sh
+stop service: sudo systemctl stop icareurine.service
+stop service when start: sudo systemctl disable icareurine.service

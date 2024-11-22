@@ -17,7 +17,8 @@ import os
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
 DEVICE_MODE = True # True->1hr mode, False->1min mode
-buzzer = Buzzer(21)
+# buzzer = Buzzer(21) # Real buzzer
+buzzer = Buzzer(7) # Fake buzzer for mute
 fan = Buzzer(4)
 
 # Rotary Encoder Pins
@@ -65,8 +66,8 @@ display = ili9341.ILI9341(
 current_weight = 0.0
 notify_time = None
 font_path="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-line_token = "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"  # test token
-# line_token = "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE" # real token
+# line_token = "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"  # test token
+line_token = "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE" # real token
 
 # Functions
 def on_buzzer(times=1, _sleep=0.3):
@@ -101,8 +102,8 @@ def buzzer_alert(stop_event, button, buzzer, duration=50, toggle_interval=0.3):
 def control_fan():
     """
     Reads the CPU temperature and toggles the fan based on thresholds:
-    - Turns on the fan if temperature > 50°C.
-    - Turns off the fan if temperature < 40°C.
+    - Turns on the fan if temperature > 55°C.
+    - Turns off the fan if temperature < 45°C.
     """
     # Read CPU temperature
     with open("/sys/class/thermal/thermal_zone0/temp", "r") as f:
@@ -111,10 +112,10 @@ def control_fan():
     print(f"CPU Temperature: {cpu_temp:.2f}°C")
 
     # Control the fan based on temperature thresholds
-    if cpu_temp > 50.0:
+    if cpu_temp > 55.0:
         fan.on()  # Turn on the fan
         print("Fan turned ON")
-    elif cpu_temp < 40.0:
+    elif cpu_temp < 45.0:
         fan.off()  # Turn off the fan
         print("Fan turned OFF")
 
