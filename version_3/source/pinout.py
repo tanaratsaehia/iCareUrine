@@ -22,5 +22,7 @@ ROTARY_SW = 17  # Switch pin
 # Buzzer
 BUZZER_PIN = 21   # Buzzer control
 
+TEST_TOKEN = "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"
+
 # Remaining GPIO Pins (Available)
 # AVAILABLE_PINS = [4, 7, 9, 12, 13, 14, 15, 16, 19, 20, 23, 26]
