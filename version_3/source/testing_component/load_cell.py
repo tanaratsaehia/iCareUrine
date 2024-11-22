@@ -42,7 +42,7 @@ try:
         # the ratio for current channel and gain.
         ratio = reading / value  # calculate the ratio for channel A and gain 128
         hx.set_scale_ratio(ratio)  # set ratio for current channel
-        print('Ratio is set.')
+        print('Ratio is set at', ratio)
     else:
         raise ValueError('Cannot calculate mean value. Try debug mode. Variable reading:', reading)
 
