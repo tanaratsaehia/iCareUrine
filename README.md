@@ -1,0 +1,1 @@
+The main goal of this device is for measurement urine using load cell and notify into Line
