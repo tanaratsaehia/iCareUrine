@@ -66,8 +66,8 @@ display = ili9341.ILI9341(
 current_weight = 0.0
 notify_time = None
 font_path="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-# line_token = "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"  # test token
-line_token = "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE" # real token
+# line_token = ""  # test token
+line_token = "" # real token
 
 # Functions
 def on_buzzer(times=1, _sleep=0.3):
