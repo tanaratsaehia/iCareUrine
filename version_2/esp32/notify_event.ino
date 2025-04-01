@@ -1,15 +1,5 @@
 #include <TridentTD_LineNotify.h>
 
-// Test Token
-// #define LINE_TOKEN_1  "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"
-// #define LINE_TOKEN_2  "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"
-// #define LINE_TOKEN_3  "AVG4lIB1KIuajDtR49TUTl87VzV8VIEGOGuVPB1HRi9"
-
-// Real Token
-// #define LINE_TOKEN  "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE"
-#define LINE_TOKEN_1  "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE" // TOKEN
-#define LINE_TOKEN_2  "q0aSBfvTv3YoNrubTM8guFUdwctRQFYNFafgW9Gyy1m" // TOKEN
-#define LINE_TOKEN_3  "0xVEI3flguwS2Q2aeTX0X3ZsFqTNIFkQpM1Y3c7pblB" // TOKEN
 
 bool notify_eight_hour_flag;
 

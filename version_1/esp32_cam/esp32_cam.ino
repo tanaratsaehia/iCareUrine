@@ -5,11 +5,6 @@
 
 #define FLASH_GPIO_NUM    4
 
-// #define LINE_TOKEN  "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE" // TOKEN
-#define LINE_TOKEN_1  "xlPCf7LajMbAHq0E9xNLST6gZlxnhm4BdaVIi9VwwxE" // TOKEN
-#define LINE_TOKEN_2  "q0aSBfvTv3YoNrubTM8guFUdwctRQFYNFafgW9Gyy1m" // TOKEN
-#define LINE_TOKEN_3  "0xVEI3flguwS2Q2aeTX0X3ZsFqTNIFkQpM1Y3c7pblB" // TOKEN
-#define googleScriptID "https://script.google.com/macros/s/AKfycbwUHt-JbJW4xp3ubmpTMTsT3LXqvfvpHDDsUUgPyTGBO-lYmXIJhIjyjJyMFid4C-E/exec"
 
 unsigned long millisCouting;
 String record_file_name;
